@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Schedule - Ho-North International School</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional Table and Responsiveness Styles */
+    #schedule-container {
+      overflow-x: auto;
+      margin: 20px auto;
+      max-width: 100%;
+    }
+    #schedule table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 16px;
+    }
+    #schedule caption {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #004080;
+    }
+    #schedule th, #schedule td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    #schedule th {
+      background-color: #004080;
+      color: #fff;
+    }
+    /* Zebra Striping */
+    #schedule tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    /* Hover Effect for Rows */
+    #schedule tbody tr:hover {
+      background-color: #e0f7fa;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      #schedule table {
+        font-size: 14px;
+      }
+    }
+
+    /* Navigation Styles */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover {
+      background-color: #004080;
+      border-radius: 5px;
+    }
+    /* Highlight Active Navigation Tab */
+    nav ul li a.active {
+      background-color: #004080;
+      border-radius: 5px;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Class Schedule</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="students.html">Students</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="schedule.html" class="active">Class Schedule</a></li>
+      <li><a href="noticeboard.html">Noticeboard</a></li>
+      <li><input type="text" placeholder="Search..." class="search-bar"></li>
+    </ul>
+  </nav>
+  <section id="schedule">
+    <div id="schedule-container">
+      <table>
+        <caption>Weekly Class Schedule</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Class</th>
+            <th>Teacher</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>07:00 - 08:00</td>
+            <td>Mathematics</td>
+            <td>John Smith</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>08:15 - 09:15</td>
+            <td>English Literature</td>
+            <td>Jane Doe</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>10:30 - 11:30</td>
+            <td>Science</td>
+            <td>Emily Johnson</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>07:00 - 08:00</td>
+            <td>Geography</td>
+            <td>Lisa Green</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>11:45 - 12:45</td>
+            <td>History</td>
+            <td>Adam Brown</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>13:00 - 14:00</td>
+            <td>Geography</td>
+            <td>Lisa Green</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>13:00 - 14:00</td>
+            <td>Physical Education</td>
+            <td>Lisa Green</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Ho-North International School | Reach Out Anytime.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/x.png" alt="X"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>

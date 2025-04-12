@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #002d59;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Hero Image Styles */
+.hero-image {
+    width: 100%; /* Match width with other section images */
+    height: auto;
+    max-height: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    object-fit: cover; /* Prevent distortion */
+}
+
+/* Core Value Section */
+.value-list {
+    display: flex; /* Horizontal layout for core values */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center-align the core values */
+    gap: 20px; /* Space between each core value */
+    margin-top: 20px;
+}
+
+.value-item {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align text under images */
+    text-align: center; /* Ensures text is properly aligned */
+}
+
+.value-list img {
+    width: 150px; /* Fixed size for core value images */
+    height: 150px;
+    border-radius: 10px; /* Polished look for images */
+    object-fit: contain; /* Keep aspect ratio intact */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.value-item span {
+    font-weight: bold; /* Make the text bold for emphasis */
+    color: #333; /* Use a consistent text color */
+    margin-top: 5px; /* Add spacing above the text */
+}
+
+/* Team Gallery Images */
+.team-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Proper scaling for team images */
+    border-radius: 10px;
+    object-fit: cover; /* Prevent distortion */
+}
+
+/* Social Media Icons */
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px; /* Adds spacing between icons */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #004080;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #002d59;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .hero-image,
+    .value-list img,
+    .team-image {
+        width: 100%;
+        max-height: 200px; /* Adjust for smaller screens */
+    }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students - Ho-North International School</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional Styles for Results and Fees Section */
+    .student-additional {
+      margin: 20px 0;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+    .student-additional h3 {
+      margin-bottom: 10px;
+      color: #004080;
+    }
+    .student-additional ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .student-additional ul li a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border: 2px solid #004080;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .student-additional ul li a:hover {
+      background-color: #004080;
+      color: white;
+    }
+
+    nav ul li a.active {
+  background-color: #004080;
+  border-radius: 5px;
+}
+
+    /* Invisible Table Styles for Study Resources */
+    .invisible-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      border: none; /* Ensure the table itself has no borders */
+    }
+
+    .invisible-table td {
+      border: none; /* Remove borders from table cells */
+      padding: 10px;
+      text-align: justify;
+    }
+
+    /* Styles for the embedded iframe */
+    #resultFrame {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-top: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      border-radius: 10px;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Students</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="students.html" class="active">Students</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="schedule.html">Class Schedule</a></li>
+      <li><a href="noticeboard.html">Noticeboard</a></li>
+      <li><input type="text" placeholder="Search..." class="search-bar"></li>
+    </ul>
+  </nav>
+  <section id="students">
+    <h2>Student Portal</h2>
+    <p>Welcome, students! Here you can register, access resources, and find important updates.</p>
+    <div class="student-registration">
+      <h3>Registration Form</h3>
+      <form action="submit_student_form.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="gender">Gender:</label>
+        <div>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+        </div>
+        
+        <label for="subjects">Subjects of Interest:</label>
+        <div>
+          <input type="checkbox" id="math" name="subjects" value="Mathematics">
+          <label for="math">Mathematics</label>
+          <input type="checkbox" id="science" name="subjects" value="Science">
+          <label for="science">Science</label>
+          <input type="checkbox" id="english" name="subjects" value="English Literature">
+          <label for="english">English Literature</label>
+          <input type="checkbox" id="history" name="subjects" value="History">
+          <label for="history">History</label>
+          <input type="checkbox" id="geography" name="subjects" value="Geography">
+          <label for="geography">Geography</label>
+          <input type="checkbox" id="art" name="subjects" value="Art">
+          <label for="art">Art</label>
+          <input type="checkbox" id="physical-education" name="subjects" value="Physical Education">
+          <label for="physical-education">Physical Education</label>
+        </div>
+        
+        <label for="class">Select Class:</label>
+        <select id="class" name="class">
+          <option value="primary">Primary</option>
+          <option value="junior-high">Junior High</option>
+          <option value="senior-high">Senior High</option>
+        </select>
+        
+        <input type="submit" value="Register">
+      </form>
+    </div>
+    
+ <!-- Study Resources Table -->
+ <div class="student-resources">
+  <h3>Study Resources</h3>
+  <table class="invisible-table">
+    <tr>
+      <td><a href="math-resources.html">Mathematics Resources</a></td>
+      <td><a href="science-resources.html">Science Resources</a></td>
+    </tr>
+    <tr>
+      <td><a href="english-resources.html">English Literature Resources</a></td>
+      <td><a href="history-resources.html">History Resources</a></td>
+    </tr>
+    <tr>
+      <td><a href="art-resources.html">Art Resources</a></td>
+      <td><a href="pe-resources.html">Physical Education Resources</a></td>
+    </tr>
+  </table>
+</div>
+
+    
+    <!-- New Section for Results and Fees -->
+    <div class="student-additional">
+      <h3>Student Information</h3>
+      <ul>
+        <li><a href="results.html" target="resultFrame">Check Your Results</a></li>
+        <li><a href="fees.html" target="resultFrame">Fees &amp; Payments</a></li>
+      </ul>
+    </div>
+    
+    <!-- Embedded iframe for loading Results or Fees pages -->
+    <iframe name="resultFrame" id="resultFrame"></iframe>
+    
+    <div class="student-announcements">
+      <h3>Student Announcements</h3>
+      <marquee>New School Uniform Policy | Inter-school Sports Begin April 25 | Library Books Due April 30 | Science Fair Competition May 15 | School Excursion on June 10</marquee>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Ho-North International School | Reach Out Anytime.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/x.png" alt="X"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>

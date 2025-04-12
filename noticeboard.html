@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticeboard - Ho-North International School</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f4f4f9, #eaeaea);
+      color: #333;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #004080;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: #002d59;
+      padding: 0.5rem;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #004080;
+      border-radius: 5px;
+    }
+
+        /* Highlight Active Navigation Tab */
+        nav ul li a.active {
+      background-color: #004080;
+      border-radius: 5px;
+    }
+
+    /* Announcement Section Styles */
+    #announcements {
+      padding: 2rem;
+      margin: 1rem;
+      background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    #announcements h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #004080;
+    }
+
+    /* Fade-in keyframes */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .announcement-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 10px 0;
+      animation: fadeIn 0.8s ease-out;
+      transition: transform 0.3s ease;
+    }
+    .announcement-card:hover {
+      transform: translateY(-5px);
+    }
+    .announcement-card h3 {
+      margin: 0 0 10px;
+      color: #004080;
+    }
+    .announcement-card p {
+      margin: 0;
+      line-height: 1.5;
+    }
+    
+    /* Expandable details using <details> */
+    .announcement-card details {
+      margin-top: 10px;
+    }
+    .announcement-card summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #004080;
+      padding: 4px 0;
+    }
+    .announcement-card summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    /* Footer Styles */
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .social-icons img {
+      width: 25px;
+      height: 25px;
+      margin: 0 5px;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>School Noticeboard</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="students.html">Students</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="schedule.html">Class Schedule</a></li>
+      <li><a href="noticeboard.html" class="active">Noticeboard</a></li>
+      <li><input type="text" placeholder="Search..." class="search-bar"></li>
+    </ul>
+  </nav>
+  <section id="announcements">
+    <h2>Latest Announcements</h2>
+    <div class="announcement-card">
+      <h3>Mid-Term Exams</h3>
+      <p>Mid-Term Exams Start on April 15th, 2025. Ensure you check your timetable for the exact date and time.</p>
+      <details>
+        <summary>Read More</summary>
+        <p>Please note that exam venues and seating arrangements are subject to change. Do check the portal for updates.</p>
+      </details>
+    </div>
+    <div class="announcement-card">
+      <h3>Parent-Teacher Meeting</h3>
+      <p>Scheduled for April 20th, 2025. Parents are encouraged to attend for detailed feedback on their children.</p>
+      <details>
+        <summary>Read More</summary>
+        <p>Information on meeting schedules and guidelines will be sent via email. Ensure your contact details are updated.</p>
+      </details>
+    </div>
+    <div class="announcement-card">
+      <h3>Sports Day</h3>
+      <p>Registration is open until April 30th, 2025. Participate and showcase your athletic skills!</p>
+      <details>
+        <summary>Read More</summary>
+        <p>There are events for both team sports and individual challenges. Keep an eye on your emails for registration details.</p>
+      </details>
+    </div>
+    <div class="announcement-card">
+      <h3>Science Fair</h3>
+      <p>The Science Fair Competition is scheduled for May 10th, 2025. Submit your project proposals soon!</p>
+      <details>
+        <summary>Read More</summary>
+        <p>Projects will be judged on creativity, originality, and presentation. Form teams if needed and start brainstorming.</p>
+      </details>
+    </div>
+    <div class="announcement-card">
+      <h3>End of Term Ceremony</h3>
+      <p>Join us on June 5th, 2025, as we celebrate achievements of our students and teachers.</p>
+      <details>
+        <summary>Read More</summary>
+        <p>The ceremony will feature award presentations and performances. Attendance is highly encouraged.</p>
+      </details>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Ho-North International School | Reach Out Anytime.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/x.png" alt="X"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>

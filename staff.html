@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff - Ho-North International School</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #004080;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: #002d59;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #004080;
+      border-radius: 5px;
+    }
+
+    /* Highlight Active Navigation Tab */
+    nav ul li a.active {
+      background-color: #004080;
+      border-radius: 5px;
+    }
+
+    /* Staff Section Styles */
+    #staff h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #staff p {
+      text-align: center;
+      margin: 0 auto 20px auto;
+      max-width: 600px;
+    }
+
+    /* Staff Gallery Styles */
+    .staff-gallery {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .staff-card {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: justify;
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .staff-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Adjusted Staff Images Styles */
+    .staff-image {
+      width: 100%;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover; /* Ensures edges fit perfectly */
+      transition: filter 0.3s ease;
+    }
+
+    .staff-card:hover .staff-image {
+      filter: grayscale(100%);
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-icons img {
+      width: 25px;
+      height: 25px;
+      margin: 0 5px;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meet Our Staff</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="students.html">Students</a></li>
+      <li><a href="staff.html" class="active">Staff</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="schedule.html">Class Schedule</a></li>
+      <li><a href="noticeboard.html">Noticeboard</a></li>
+      <li><input type="text" placeholder="Search..." class="search-bar"></li>
+    </ul>
+  </nav>
+  <section id="staff">
+    <h2>Our Educators and Support Staff</h2>
+    <p>Ho-North's greatest asset is its people, working tirelessly to create a nurturing environment for students.</p>
+    <div class="staff-gallery">
+      <div class="staff-card">
+        <img src="members image/Asante Benedicta Annorbea.jpg" alt="Asante Benedicta Annorbea" class="staff-image">
+        <h3>Asante Benedicta Annorbea</h3>
+        <p>English Literature Teacher</p>
+        <p>ID: BEMAT/VR/04/23/0025</p>
+      </div>
+      <div class="staff-card">
+        <img src="members image/Anyigba Angellus Atsu.jpg" alt="Anyigba Angellus Atsu" class="staff-image">
+        <h3>Anyigba Angellus Atsu</h3>
+        <p>Science Teacher</p>
+        <p>ID: BEMAT/VR/04/23/0038</p>
+      </div>
+      <div class="staff-card">
+        <img src="members image/Alale Isaac.jpg" alt="Alale Isaac" class="staff-image">
+        <h3>Alale Isaac</h3>
+        <p>Mathematics Teacher</p>
+        <p>ID: BEMAT/UE/02/23/0008</p>
+      </div>
+      <div class="staff-card">
+        <img src="members image/Azalu Oliver.jpg" alt="Azalu Oliver" class="staff-image">
+        <h3>Azalu Oliver</h3>
+        <p>Arts Teacher</p>
+        <p>ID: BEMAT/UE/02/23/0003</p>
+      </div>
+      <div class="staff-card">
+        <img src="members image/Fusheini Emmanuel Naabilla.jpg" alt="Fusheini Emmanuel Naabilla" class="staff-image">
+        <h3>Fusheini Emmanuel Naabilla</h3>
+        <p>Geography Teacher</p>
+        <p>ID: BEMAT/UE/02/23/0010</p>
+      </div>
+      <div class="staff-card">
+        <img src="images/Science Teacher.jpg" alt="Science Teacher" class="staff-image">
+        <h3>Akurugu Mark Ateni</h3>
+        <p>Physical Education Teacher</p>
+        <p>ID: BEMAT/UE/02/23/0007</p>
+      </div>
+      <div class="staff-card">
+        <img src="members image/Patricia Kanzoni Ayariga.jpg" alt="Patricia Kanzoni Ayariga" class="staff-image">
+        <h3>Patricia Kanzoni Ayariga</h3>
+        <p>History Teacher</p>
+        <p>ID: BEMAT/UE/02/23/0004</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Ho-North International School | Reach Out Anytime.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/x.png" alt="X"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>

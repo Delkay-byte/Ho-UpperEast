@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ho-North International School</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #004080;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #002d59;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #004080;
+            border-radius: 5px;
+        }
+
+            /* Highlight Active Navigation Tab */
+    nav ul li a.active {
+      background-color: #004080;
+      border-radius: 5px;
+    }
+
+        /* Section Styles */
+        section {
+            padding: 2rem;
+            margin: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Hero Image Styles */
+        .section-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        /* Core Value Section */
+        .value-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .value-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+            margin: 10px;
+        }
+
+        .value-list img {
+            width: 100%; /* Take up full horizontal space */
+            height: 200px; /* Set a fixed height for consistency */
+            border-radius: 10px; /* Add rounded corners */
+            object-fit: cover; /* Ensure proper scaling without distortion */
+            margin-bottom: 10px;
+        }
+
+        .value-item span {
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        /* Team Gallery Images */
+        .team-image {
+            width: 100%; /* Maintain full width */
+            height: auto;
+            max-height: 1200px; /* Increased size for larger display */
+            border-radius: 10px;
+            object-fit: cover; /* Ensures proportional scaling */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icons img {
+            width: 25px;
+            height: 25px;
+            margin: 0 5px;
+        }
+
+        .social-icons a:hover img {
+      transform: scale(1.2);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Ho-North International School</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="schedule.html">Class Schedule</a></li>
+            <li><a href="noticeboard.html">Noticeboard</a></li>
+            <li><input type="text" placeholder="Search..." class="search-bar"></li>
+        </ul>
+    </nav>
+    <section id="history">
+        <div class="section-header">
+            <h2>Our Story</h2>
+            <img src="images/School Story.jpg" alt="Our School" class="section-image">
+        </div>
+        <p>Founded in the heart of Ho, Ho-North International School is committed to academic excellence and personal growth. We nurture future leaders through a well-rounded curriculum and a strong focus on integrity and innovation.</p>
+    </section>
+    <section id="values">
+        <h2>Our Core Values</h2>
+        <ul class="value-list">
+            <li class="value-item">
+                <img src="images/Integrity.jpg" alt="Integrity Icon">
+                <span>Integrity</span>
+            </li>
+            <li class="value-item">
+                <img src="images/Excellence.jpg" alt="Excellence Icon">
+                <span>Excellence</span>
+            </li>
+            <li class="value-item">
+                <img src="images/Empathy.jpg" alt="Empathy Icon">
+                <span>Empathy</span>
+            </li>
+            <li class="value-item">
+                <img src="images/Innovation.jpg" alt="Innovation Icon">
+                <span>Innovation</span>
+            </li>
+            <li class="value-item">
+                <img src="images/Community.jpg" alt="Community Icon">
+                <span>Community</span>
+            </li>
+        </ul>
+    </section>
+    <section id="team">
+        <h2>Our Leadership Team</h2>
+        <div class="team-gallery">
+            <div class="team-card">
+                <img src="images/Principal.jpg" alt="Principal" class="team-image">
+                <h3>Principal Benedicta Asante</h3>
+                <p>Committed to leading with vision and excellence.</p>
+            </div>
+            <div class="team-card">
+                <img src="images/Vice Leadership Team.jpg" alt="Vice-Principal" class="team-image">
+                <h3>Vice Principal Anyigba Angelus Atsu</h3>
+                <p>Passionate about inspiring students to reach their full potential.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Ho-North International School | Reach Out Anytime.</p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="https://twitter.com" target="_blank"><img src="images/x.png" alt="X"></a>
+          <a href="https://instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a>
+        </div>
+      </footer>
+</body>
+</html>

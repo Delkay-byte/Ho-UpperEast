@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ho-North International School</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #292727;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #004080;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: #002d59;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    nav ul li {
+      margin: 0;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s;
+    }
+    
+    nav ul li a:hover {
+      background-color: #004080;
+      border-radius: 5px;
+    }
+    
+    /* Highlight Active Navigation Tab */
+    nav ul li a.active {
+      background-color: #004080;
+      border-radius: 5px;
+    }
+    
+    /* Hero Section Styles */
+    #hero {
+      position: relative;
+      text-align: center;
+      color: black;
+    }
+    
+    .hero-overlay h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: black;
+    }
+    
+    .hero-overlay p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: black;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: #004080;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+      background-color: #002d59;
+    }
+    
+    .hero-image {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    
+    /* Features Section Styles */
+    #features {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+    
+    .feature-card {
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 1rem;
+      max-width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .feature-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    
+    /* Testimonials Section Styles */
+    #testimonials {
+      padding: 2rem;
+      background-color: #f4f4f9;
+      text-align: center;
+    }
+    
+    #testimonials h2 {
+      margin-bottom: 20px;
+      color: #004080;
+    }
+    
+    .testimonial {
+      margin-bottom: 1.5rem;
+    }
+    
+    .testimonial p {
+      font-style: italic;
+    }
+    
+    /* Footer Styles */
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .social-icons img {
+      width: 25px;
+      height: 25px;
+      margin: 0 5px;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.2);
+    }
+    
+    /* Learn More Button Section Styles */
+    #learn-more-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Ho-North International School</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="students.html">Students</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="schedule.html">Class Schedule</a></li>
+      <li><a href="noticeboard.html">Noticeboard</a></li>
+      <li><input type="text" placeholder="Search..." class="search-bar"></li>
+    </ul>
+  </nav>
+  <section id="hero">
+    <div class="hero-overlay">
+      <h2>Shaping Minds, Empowering Futures</h2>
+      <p>Your journey to success begins here. Explore the limitless possibilities.</p>
+    </div>
+    <img src="images/School Campus.jpg" alt="Ho-North Campus" class="hero-image">
+    <h3>Serene School Atmosphere</h3>
+    <p>Our conducive environment helps a relaxed mind to achieve academic excellence.</p>
+  </section>
+  <section id="features">
+    <div class="feature-card">
+      <img src="images/Academics.jpg" alt="Academics" class="feature-image">
+      <h3>Excellent Academics</h3>
+      <p>Our curriculum fosters critical thinking and creativity.</p>
+    </div>
+    <div class="feature-card">
+      <img src="images/Talented Staff.jpg" alt="Staff" class="feature-image">
+      <h3>Talented Staff</h3>
+      <p>Our educators are dedicated to nurturing young minds.</p>
+    </div>
+    <div class="feature-card">
+      <img src="images/Modern Facilities.jpg" alt="Facilities" class="feature-image">
+      <h3>Modern Facilities</h3>
+      <p>State-of-the-art classrooms, labs, and sports complexes await you.</p>
+    </div>
+  </section>
+  <section id="testimonials">
+    <h2>What Our Students and Parents Say</h2>
+    <div class="testimonial">
+      <p>"Ho-North has transformed my child's academic performance. We couldn't be happier!"</p>
+      <cite>- A Parent</cite>
+    </div>
+    <div class="testimonial">
+      <p>"The serene atmosphere and dedicated staff make learning enjoyable every day."</p>
+      <cite>- A Student</cite>
+    </div>
+    <div class="testimonial">
+      <p>"I feel empowered by the modern facilities and supportive environment."</p>
+      <cite>- Another Student</cite>
+    </div>
+  </section>
+  <section id="learn-more-section">
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
+  <marquee id="announcements">Mid-Term Exams Start on April 15th | Parent-Teacher Meeting Scheduled for April 20th | Sports Day Registration Open Until April 30th</marquee>
+  <footer>
+    <p>&copy; 2025 Ho-North International School | Reach Out Anytime.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/x.png" alt="X"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>
